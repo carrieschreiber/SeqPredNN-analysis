@@ -1,11 +1,3 @@
 # SeqPredNN Analysis
 
-## AlphaFold
-
-## TMscore
-
-## Physical Properties
-
-## Sequence Similarity
-
-## Substitution Matrix
+Scripts used in the making of my Honours Research Project: Assessment of the utility of protein sequences predicted from structures by a neural network
