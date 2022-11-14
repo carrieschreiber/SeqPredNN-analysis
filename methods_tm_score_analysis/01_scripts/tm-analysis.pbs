@@ -1,0 +1,11 @@
+#PBS -N tm_score_1
+#PBS -l walltime=24:00:00
+#PBS -l ncpus=32
+#PBS -l mem=200GB
+#PBS -e tm_score_1.err
+#PBS -e tm_score_1.out
+#PBS -m abe
+
+cd $PBS_O_WORKDIR
+
+./test-script.txt

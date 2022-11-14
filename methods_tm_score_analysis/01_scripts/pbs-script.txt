@@ -1,0 +1,11 @@
+#!/bin/bash
+
+while read p; do
+	echo "$p"
+	# original to original alphafold
+	./TMscore /home/26664089/TMscore/chain_pdbs/${p}.pdb /home/26664089/TMscore/alphafold_pdbs/${p}_original_unrelaxed_rank_1_model_*.pdb > /home/26664089/TMscore/tm_output/${p}_original.out
+
+	# original to predicted alphafold
+	./TMscore /home/26664089/TMscore/chain_pdbs/${p}.pdb /home/26664089/TMscore/alphafold_pdbs/${p}_prediction_unrelaxed_rank_1_model_*.pdb > /home/26664089/TMscore/tm_output/${p}_predicted.out
+
+done <combined_ids.txt
